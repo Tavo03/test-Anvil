@@ -1,9 +1,12 @@
 unique_ids:
   assets:
+    login.png: '1765898819632487718782517.72394'
+    logoUNT.jpeg: '1765899769319524265605053.3596'
     standard-page.html: NZLZDW33I6EMSBFRZOCGZUETG5CQLJMH
     theme.css: AVBWXRTTXJ4CBTBNCMZF4OCNSVHTFY2R
   forms:
     Form1: SWWMNJ47CY3BMZVTPTQKBTT5RWM5ZHE2
   modules: {}
   scripts: {}
-  server_modules: {}
+  server_modules:
+    ServerModule1: '1765902927932458531852007.17316'

@@ -1,5 +1,69 @@
 components:
-- components: []
+- components:
+  - layout_properties: {grid_position: 'UXJSST,AUBIUH'}
+    name: image_1
+    properties: {height: 162, source: _/theme/login.png}
+    type: Image
+  - components:
+    - layout_properties: {col_xs: 4, row: WBRNGB, width_xs: 2}
+      name: label_1
+      properties: {align: right, bold: true, text: 'Usuario:'}
+      type: Label
+    - layout_properties: {col_xs: 6, row: WBRNGB, width_xs: 2}
+      name: name
+      properties: {}
+      type: TextBox
+    - layout_properties: {col_xs: 4, row: WXFYUQ, width_xs: 2}
+      name: label_2
+      properties: {align: right, bold: true, text: 'Contraseña:'}
+      type: Label
+    - layout_properties: {col_xs: 6, row: WXFYUQ, width_xs: 2}
+      name: password
+      properties: {}
+      type: TextBox
+    - components:
+      - data_bindings:
+        - {code: 'self.item['''']', property: tooltip, writeback: false}
+        event_bindings: {click: button_login_click}
+        layout_properties: {grid_position: 'XRPNER,GMJXTE', row_background: 'theme:On Primary'}
+        name: button_login
+        properties:
+          align: full
+          background: red
+          border: ''
+          enabled: true
+          foreground: theme:On Primary
+          icon: ''
+          icon_align: left
+          role: null
+          spacing:
+            margin: [null, null, null, null]
+            padding: [null, '30', null, '30']
+          text: Ingresar
+          visible: true
+        type: Button
+      - data_bindings: []
+        event_bindings: {click: button_create_click}
+        layout_properties: {grid_position: 'XRPNER,ARZSPW'}
+        name: button_create
+        properties:
+          align: full
+          background: green
+          foreground: theme:On Primary
+          role: tonal-button
+          spacing:
+            padding: [null, null, null, null]
+          text: Crear cuenta
+        type: Button
+      layout_properties: {col_xs: 3, row: HKXMNE, width_xs: 6}
+      name: column_panel_1
+      properties: {background: 'theme:On Primary'}
+      type: ColumnPanel
+    data_bindings: []
+    layout_properties: {grid_position: 'TSLMPM,IQQFXZ'}
+    name: grid_panel_1
+    properties: {}
+    type: GridPanel
   layout_properties: {slot: default}
   name: content_panel
   properties: {col_widths: '{}'}
