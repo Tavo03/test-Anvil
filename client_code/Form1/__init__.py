@@ -5,6 +5,8 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 
+resp = anvil.server.call('conect_mongoDB')
+
 class Form1(Form1Template):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
@@ -26,3 +28,4 @@ class Form1(Form1Template):
     resp = anvil.server.call('create_user', user_name, user_password)
     if resp:
       alert(f"El usuario {user_name} ha sido creado")
+
