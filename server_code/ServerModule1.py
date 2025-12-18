@@ -13,7 +13,7 @@ from pymongo.server_api import ServerApi
 # Here is an example - you can replace it with your own:
 #
 
-uri = "mongodb+srv://t1053600121_db_user:KYPk.4rwQHmU5V9@cluster0.lnquhmr.mongodb.net/?appName=Cluster0"
+uri = "mongodb+srv://t1053600121_db_user:woI4LKemyLeN7cUU@cluster0.lnquhmr.mongodb.net/?appName=Cluster0"
 # Create a new client and connect to the server
 client = MongoClient(uri, server_api=ServerApi('1'))
 # Send a ping to confirm a successful connection
